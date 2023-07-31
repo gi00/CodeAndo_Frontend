@@ -1,0 +1,186 @@
+<nav class="navbar navbar-expand-lg navbar bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand nav-link" routerLink="">
+            <img src="assets/img/CA.ico" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/workspace">
+              <i class="fas fa-code fa-lg" routerLink="/workspace" ></i> Editor de código
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <i class="fas fa-duotone fa-folder-open" ></i> Tus proyectos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <i class="fas fa-users fa-lg" ></i> Grupos
+            </a>
+          </li>
+        </ul>
+        <div class="dropdown pb-2" style="margin-right: 15px;" >
+            <a href ="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" >
+                <img src="assets/img/user.png" alt="hugenerd"  width="30" height="30" class="rounded-circle">
+                <span class="d-none d-sm-inline mx-1" >Nombre Usuario</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                <li><a class="dropdown-item" >Nuevo Proyecto...</a></li>
+                <li><a class="dropdown-item" href="#">Configuraciones</a></li>
+                <li><a class="dropdown-item" routerLink="/perfil">Profile</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item">Sign out</a></li>
+                <hr>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="sidebar-user">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none">
+                  <img src="assets/img/user.png" alt="hugenerd" width="45" height="45" class="rounded-circle">
+                  <span class="d-none d-sm-inline mx-1">Nombre Usuario</span>
+                </a>
+              </div>
+              <div class="sidebar-menu">
+                <ul class="sidebar-list">
+                  <li class="sidebar-item">
+                    <a class="sidebar-link">
+                      <i class="bi bi-list-task"></i> <span class="sidebar-text">Todos tus proyectos</span>
+                    </a>
+                  </li>
+                  <li   class="sidebar-item">
+                    <a class="sidebar-link">
+                      <i class="bi bi-code"></i> <span class="sidebar-text">Invitaciones</span>
+                    </a>
+                  </li>
+                  <li  class="sidebar-item">
+                    <a  class="sidebar-link">
+                      <i class="bi bi-code"></i> <span class="sidebar-text">Mis Invitaciones</span>
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a  class="sidebar-link">
+                      <i class="bi bi-code"></i> <span class="sidebar-text">Invitaciones A Proyectos</span>
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a  class="sidebar-link">
+                      <i class="bi bi-code"></i> <span class="sidebar-text">Snippets</span>
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                      <i class="bi bi-globe"></i> <span class="sidebar-text">Proyectos públicos</span>
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                      <i class="bi bi-lock"></i> <span class="sidebar-text">Proyectos privados</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>      
+              <div class="sidebar-footer">
+                <div  id="nuevoProyecto-btn" class="d-flex align-items-center text-white text-decoration-none">
+                 <div>
+                  <img src="assets/img/anadir.png" alt="hugenerd" width="45" height="45">
+                  <span class="d-none d-sm-inline mx-1">Añadir nuevo proyecto.</span>
+                 </div>
+                 <div>
+                  <img  src="assets/img/anadir.png" alt="hugenerd" width="45" height="45">
+                  <span class="d-none d-sm-inline mx-1">Añadir nueva Invitacion</span>
+                 </div>
+                </div>
+              </div>          
+        </div> 
+        
+        <div class="projects col py-3">
+            
+<div class="projects" >
+  <div class="project-card" >
+    <h3>Nombre del proyecto</h3>
+    <p>proyecto.descripcion </p>
+    <button >Go</button>
+  </div>
+</div>
+
+<div class="projects" >
+  <div class="project-card" >
+    <h3>Nombre del Proyecto: Invitacion</h3>
+    <h4>Invitado: invitado</h4>
+    <p>Estado: estado</p>
+    <button >Cancelar</button>
+  </div>
+</div>
+
+<div class="projects"  >
+  <div class="project-card" >
+    <h3>Nombre del Proyecto: name</h3>
+    <h4>Invitado: invitado</h4>
+    <p>Estado: estado</p>
+    <button>Go</button>
+    <button >Aceptar</button>
+    <button>Rechazar</button>
+  </div>
+</div>
+          </div>      
+    </div>
+</div>
+
+
+<!-- Modal -->
+<ng-template #newProyectoModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title font-weight-bolder " > Nuevo Proyecto</h4>
+    <button type="button" class="close btn" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <input placeholder="Nombre del proyecto" type="text" id="name" name="name">
+        <input placeholder="Descripcion" type="text" id="descripcion" name="descripcion" >
+      </div>
+
+      <button type="submit">Crear</button>
+    </form>
+  </div>
+  
+</ng-template>
+
+<!-- Modal -->
+<ng-template #newInvitacionModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title font-weight-bolder " >Nueva Invitacion</h4>
+    <button type="button" class="close btn" aria-label="Close" >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+    <form >
+      <div class="form-group">
+        <input placeholder="Email@colaborador" type="email" id="invitado" name="invitado" >
+      </div>
+      <div class="form-group">
+        <select id="proyecto" name="proyecto" >
+          <option >proyecto.name</option>
+        </select>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  
+</ng-template>

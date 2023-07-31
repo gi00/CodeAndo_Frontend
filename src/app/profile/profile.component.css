@@ -1,0 +1,161 @@
+nav-item {
+    font-size: 3rem;
+    margin-right: 10px;
+}
+
+i {
+    color: #d5d5d5;
+}
+  
+.sidebar-user {
+    margin: 40px 40px;
+  }
+  
+  .sidebar-menu {
+    display: flex;
+    margin-top: 55px;
+    justify-content: center;
+  }
+  
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-item {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .sidebar-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .sidebar-text {
+    margin-left: 10px;
+  }
+  
+  .bi {
+    font-size: 1.5rem;
+  }
+
+  .sidebar-footer {
+   margin: 135px 40px;
+  }
+
+  .projects {
+    background-color: #1E1F26;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 5px;
+    height: 28%;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  }
+  
+  .project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    margin-bottom: 20px;
+  }
+  
+  .project-card button {
+    background-color: #343A40;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .project-card button:hover {
+    background-color: #FFFFFF;
+    color: #343A40;
+  }
+  
+
+  #nuevoProyecto-btn img{
+    cursor: pointer;
+  }
+
+  #nuevoProyecto-btn img:hover{
+    background: #343A40;
+    border-radius: 50%;   
+  }
+
+  .modal-header{
+    background-color: #343A40;
+    color: #FFFFFF;
+  }
+
+
+
+
+  .form-group {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+    
+  }
+
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #7a7b7d;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+    
+  }
+  
+  .form-group input::placeholder{
+    text-align: center;
+  }
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #343A40;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* button[type="submit"]:hover {
+    background-color:  #1f2225;
+  } */
+
+  .sidebar-menu a {
+    cursor: pointer;
+  }
