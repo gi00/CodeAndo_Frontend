@@ -9,8 +9,8 @@ import { WorkSpaceComponent } from './work-space/work-space.component';
 
 
 const routes: Routes = [
- {path:"sing-in", component: SingInComponent},
- {path:"sing-up", component: SingUpComponent},
+ {path:"singin", component: SingInComponent},
+ {path:"singup", component: SingUpComponent},
  {path:"", component: HomeComponent},
  {path:"profile", component: ProfileComponent},
  {path:"plans", component: PlansComponent},
